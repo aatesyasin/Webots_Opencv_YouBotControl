@@ -1,0 +1,186 @@
+#VRML_SIM R2021a utf8
+WorldInfo {
+  info [
+    "Simulation of the KUKA youBot robot."
+    "This model includes an accurate and fast simulation of the Meccanum wheels."
+    "The robot can be equiped with various sensors (including the Microsoft Kinect) and configured with zero, one or two arms."
+  ]
+  title "KUKA youBot"
+  basicTimeStep 16
+  coordinateSystem "NUE"
+  contactProperties [
+    ContactProperties {
+      material1 "InteriorWheelMat"
+      coulombFriction [
+        1.8, 0, 0.2
+      ]
+      frictionRotation -0.9648 0
+      bounce 0
+      forceDependentSlip [
+        10, 0
+      ]
+    }
+    ContactProperties {
+      material1 "ExteriorWheelMat"
+      coulombFriction [
+        1.8, 0, 0.2
+      ]
+      frictionRotation 0.9648 0
+      bounce 0
+      forceDependentSlip [
+        10, 0
+      ]
+    }
+  ]
+}
+Viewpoint {
+  orientation -0.9966483042943973 -0.061437166942584706 -0.054015109600660006 1.4924681446246006
+  position -7.989407168162119 38.75991413928315 -13.144533546726027
+  follow "youBot"
+}
+TexturedBackground {
+}
+TexturedBackgroundLight {
+}
+Floor {
+  size 100 100
+  appearance Parquetry {
+    type "light strip"
+    colorOverride 0.5 0.5 0.5
+  }
+}
+Panel {
+  translation -10.2 -2.16713e-05 -16.99
+  rotation 0.25056206820525934 0.25056306820553154 -0.9351132545462786 -1.6378353071795866
+  name "panel(9)"
+}
+Panel {
+  translation -11.4557 -2.34784e-05 -17.715
+  rotation 0.25056206820525934 0.25056306820553154 -0.9351132545462786 -1.6378353071795866
+  name "panel(10)"
+}
+Panel {
+  translation -12.7292 -2.5311e-05 -18.45
+  rotation 0.5773489358556708 0.5773509358554485 -0.5773509358554485 -2.094395307179586
+  name "panel(13)"
+}
+Panel {
+  translation -12.7292 -2.3788e-05 -19.92
+  rotation 0.5773489358556708 0.5773509358554485 -0.5773509358554485 -2.094395307179586
+  name "panel(16)"
+}
+Panel {
+  translation -12.7292 -2.22232e-05 -21.43
+  rotation -0.2505611309860019 -0.25056313098704747 0.9351134888498739 1.63784
+  name "panel(17)"
+}
+Panel {
+  translation -14.0106 -3.05128e-05 -22.17
+  rotation -0.2505611309860019 -0.25056313098704747 0.9351134888498739 1.63784
+  name "panel(19)"
+}
+Panel {
+  translation -8.71 -1.61984e-05 -15.57
+  rotation 0 0 1 1.5708
+  name "panel(3)"
+}
+Panel {
+  translation -10.18 -2.1598e-05 -15.57
+  rotation 0.25056206820525934 0.25056306820553154 -0.9351132545462786 -1.6378353071795866
+  name "panel(8)"
+}
+Panel {
+  translation -11.4447 -2.34177e-05 -16.3
+  rotation 0.25056206820525934 0.25056306820553154 -0.9351132545462786 -1.6378353071795866
+  name "panel(11)"
+}
+Panel {
+  translation -12.692 -2.52126e-05 -17.02
+  rotation 0.25056206820525934 0.25056306820553154 -0.9351132545462786 -1.6378353071795866
+  name "panel(12)"
+}
+Panel {
+  translation -13.9521 -2.70561e-05 -17.73
+  rotation 0.5773489358556708 0.5773509358554485 -0.5773509358554485 -2.094395307179586
+  name "panel(14)"
+}
+Panel {
+  translation -13.9521 -2.55221e-05 -19.21
+  rotation 0.5773489358556708 0.5773509358554485 -0.5773509358554485 -2.094395307179586
+  name "panel(15)"
+}
+Panel {
+  translation -13.9521 -2.40085e-05 -20.67
+  rotation -0.2505611309860019 -0.25056313098704747 0.9351134888498739 1.63784
+  name "panel(18)"
+}
+Panel {
+  translation -15.1907 -3.20182e-05 -21.385
+  rotation -0.2505611309860019 -0.25056313098704747 0.9351134888498739 1.63784
+  name "panel(20)"
+}
+Panel {
+  translation -8.71 -1.61984e-05 -16.99
+  rotation 0 0 1 1.5708
+  name "panel(7)"
+}
+Panel {
+  translation -7.24 -1.07988e-05 -15.57
+  rotation 0 0 1 1.5708
+  name "panel(2)"
+}
+Panel {
+  translation -7.24 -1.07988e-05 -16.99
+  rotation 0 0 1 1.5708
+  name "panel(6)"
+}
+Panel {
+  translation -5.78 -5.43623e-06 -15.57
+  rotation 0 0 1 1.5708
+  name "panel(1)"
+}
+Panel {
+  translation -5.78 -5.43623e-06 -16.99
+  rotation 0 0 1 1.5708
+  name "panel(5)"
+}
+Panel {
+  translation -4.3 0 -15.57
+  rotation 0 0 1 1.5708
+}
+Panel {
+  translation -4.3 0 -16.98
+  rotation 0 0 1 1.5708
+  name "panel(4)"
+}
+Youbot {
+  hidden position_0_0 1.9221212214601084
+  hidden position_0_1 91.51786988428917
+  hidden position_0_2 0.6422059438912074
+  hidden position_0_3 92.7977960178827
+  hidden rotation_7 0 1 0 1.9221212214601084
+  hidden rotation_8 0 0.9999999999999999 0 3.5532755837749583
+  hidden rotation_9 0 0.9999999999999999 0 0.6422059438912071
+  hidden rotation_10 0 1 0 4.8332017173684925
+  translation -0.543882 0.102931 -15.7329
+  rotation -0.04112759966500008 0.7064199942459408 0.7065969942444991 3.05931
+  controller "youBotHand"
+  controllerArgs [
+    "demo"
+  ]
+  bodySlot [
+    GPS {
+      rotation 1 7.09505e-07 9.35788e-07 3.14159
+      name "gpsX"
+    }
+    HokuyoUtm30lx {
+      translation 0.2 -2.51033e-13 0.09
+      rotation -0.5773509358554485 0.5773489358556708 0.5773509358554485 -2.094395307179586
+    }
+    Kinect {
+      translation 0.26 -8.09162e-07 -0.0299996
+      rotation 0.5773509358560258 -0.577349935856137 -0.577349935856137 2.09439
+    }
+  ]
+  numberOfArms 0
+}
