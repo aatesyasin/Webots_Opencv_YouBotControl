@@ -1,4 +1,5 @@
 ## Webots_Opencv_YouBotControl
+![Uygulama Videosu](https://github.com/aatesyasin/Webots_Opencv_YouBotControl/blob/main/VideoPar%C3%A7ac%C4%B1klar%C4%B1/gitHub_Parkur.mp4)
 # Webots Ortamında El ile Robot Kontolü 
 Projede, opencv temelli mediapipe modülü ile algılanan parmakların algoritmik sıralanmasıyla Kuka youBot adlı robotun Webots ortamında kontolü yapılmakdatır.
 
