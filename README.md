@@ -22,7 +22,7 @@ Projede, opencv temelli mediapipe modülü ile algılanan parmakların algoritmi
 
 
 ## Kullanılan Python Sürüm Ve Modülleri
-### WindowsContrellerUDP.py
+
 1. Python 3.6
 2. opencv
 3. mediapipe
